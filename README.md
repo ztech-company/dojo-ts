@@ -1,1 +1,1 @@
-# dojo-ts
+# Typescript Dojo for all
