@@ -1,12 +1,10 @@
-import express from 'express';
+import express, { Router } from 'express';
 
 export class Server {
   readonly app = express();
 
-  constructor(private readonly port: number) {
-    this.app.get('/', (req, res) => {
-      res.send('Hello Donus!');
-    });
+  constructor(private readonly port: number, routes: Router[]) {
+    routes.forEach((route) => this.app.use(route));
   }
 
   start() {

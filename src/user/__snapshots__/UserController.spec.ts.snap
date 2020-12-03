@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserController GET /users should list user 1`] = `
+Array [
+  Object {
+    "cpf": "00000000000",
+    "name": "Fulano",
+  },
+  Object {
+    "cpf": "11111111111",
+    "name": "Beltrano",
+  },
+]
+`;
